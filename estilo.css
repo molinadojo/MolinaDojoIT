@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+    
+  body {
+    background: #fefefe;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 50px auto;
+  }
+  .heading {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  
+  #subtitulo
+  {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 0px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+  }
+  
+
+  .contenido-principal__resumen 
+  {
+    width: 80%;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 0px;
+    margin:auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-style: italic;
+    
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  
+  
+  .card {
+    width: 20%;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s;
+  }
+  
+  .card-header {
+    text-align: center;
+    padding: 50px 10px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: #fff;
+  }
+  
+  .card-body {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .card-body .btn {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 5px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  }
+
+  footer
+  {
+    align-items: center;
+    text-align: center;
+    margin-top: -100px;
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    
+  }
+
+  footer ul
+  {
+    list-style-type: none;
+  }
+
+  footer li 
+  {
+    color:black;
+    font-size: 20px;
+  }
+
+  footer a 
+  {
+    color: rgb(255, 2, 2);
+    margin: 10px;
+    font-size: 25px;
+    position: relative;
+    display: inline;
+  }
+
+  #Resumen
+  {
+    background:linear-gradient(to right, #ff416c, #ff4b2b);
+    padding: 10px;
+    padding-top: 50px;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 18px;
+    font-size: 14px;
+  }
+
+  #disciplinas 
+  {
+    font-size: 30px;
+  }
+
+  /* carrusel*/
+
+  .carousel__contenedor {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .carousel__anterior,
+  .carousel__siguiente {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: rgb(255, 2, 2);
+    opacity: 20%;
+  }
+  
+  .carousel__anterior:hover,
+  .carousel__siguiente:hover {
+    opacity: 100%;
+  }
+  
+  .carousel__anterior {
+    left: -30px;
+  }
+  
+  .carousel__siguiente {
+    right: -30px;
+  }
+  
+  .carousel__lista {
+    overflow: hidden;
+  }
+  
+  .carousel__elemento {
+    text-align: center;
+  }
+  
+  .carousel__indicadores .glider-dot {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: rgb(255, 2, 2);
+    opacity: .2;
+    border-radius: 0;
+  }
+  
+  .carousel__indicadores .glider-dot:hover {
+    opacity: .5;
+  }
+  
+  .carousel__indicadores .glider-dot.active {
+    opacity: 1;
+  }
+  
+
+
+
+  
+  @media screen and (max-width: 1000px) {
+    .card {
+      width: 40%;
+    }
+    footer img 
+  {
+    width: 80%;
+  }
+  }
+  
+  @media screen and (max-width: 620px) {
+    .container {
+      width: 100%;
+    }
+  
+    .heading {
+      padding: 20px;
+      font-size: 20px;
+    }
+  
+    .card {
+      width: 80%;
+    }
+
+    .contenido-principal__resumen 
+  {
+    width: 80%;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin:auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+  }
+  
+  footer img 
+  {
+    width: 80%;
+  }
+
+  }
+  
